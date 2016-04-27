@@ -237,14 +237,14 @@ h2 {
   opacity: 1;
 }
 
-.star {
+.flower {
   left: 0;
   height: 30px;
   position: absolute;
   top: 0;
   width: 30px;
   transform-origin: center center;
-  background: url("../images/star.svg") no-repeat center center / contain transparent;
+  background: url("../images/flower.svg") no-repeat center center / contain transparent;
   animation: pulse 1s infinite alternate;
 }
 
