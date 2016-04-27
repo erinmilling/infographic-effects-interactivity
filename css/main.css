@@ -245,18 +245,24 @@ h1 {
   width: 30px;
   transform-origin: center center;
   background: url("../images/flower.svg") no-repeat center center / contain transparent;
-  animation: pulse 1s infinite alternate;
+  animation: spin 5s infinite alternate;
 }
 
-@keyframes pulse {
+@keyframes spin {
 
   0% {
-    width: 20px;
-    height: 20px;
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(90deg);
+  }
+
+  66% {
+    transform: rotate(180deg);
   }
 
   100% {
-    width: 60px;
-    height: 60px;
+    transform: rotate(360deg);
   }
 }
