@@ -8,7 +8,7 @@ var $two = $('.two');
 var $three = $('.three');
 var $four = $('.four');
 var $body = $('.background');
-var $star;
+var $flower;
 var backWidth = $body.outerWidth();
 var backHeight = $body.outerHeight();
 
@@ -49,13 +49,13 @@ $four.waypoint(function () {
 }, {offset: '50%' });
 
 for (i = 0; i < 75; i++) {
-  $star = $('<background>');
-  $star.addClass('star');
-  $star.css({
+  $flower = $('<background>');
+  $flower.addClass('flower');
+  $flower.css({
     top: Math.random() * backHeight,
     left: Math.random() * backWidth,
     transform: 'rotate(' + Math.random() * 360 + 'deg) scale(' + Math.random() + ')',
     opacity: Math.random()
   });
-  $body.append($star);
+  $body.append($flower);
 }
