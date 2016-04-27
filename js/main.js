@@ -12,39 +12,39 @@ var $flower;
 var backWidth = $body.outerWidth();
 var backHeight = $body.outerHeight();
 
-$seed.waypoint(function() {
+$seed.waypoint ( function() {
   $seed.addClass('js-seed-animate');
 }, {offset: '50%' });
 
-$seedling.waypoint(function() {
+$seedling.waypoint (function() {
   $seedling.addClass('js-seedling-animate');
 }, {offset: '50%' });
 
-$sprout.waypoint(function() {
+$sprout.waypoint (function() {
   $sprout.addClass('js-sprout-animate');
 }, {offset: '50%' });
 
-$plant.waypoint(function() {
+$plant.waypoint (function() {
   $plant.addClass('js-plant-animate');
 }, {offset: '50%' });
 
-$bigplant.waypoint(function() {
+$bigplant.waypoint (function() {
   $bigplant.addClass('js-bigplant-animate');
 }, {offset: '50%' });
 
-$one.waypoint(function () {
+$one.waypoint (function() {
   $one.addClass('js-bounce');
 }, {offset: '50%' });
 
-$two.waypoint(function () {
+$two.waypoint (function() {
   $two.addClass('js-slide');
 }, {offset: '50%' });
 
-$three.waypoint(function () {
+$three.waypoint (function() {
   $three.addClass('js-rotate');
 }, {offset: '50%' });
 
-$four.waypoint(function () {
+$four.waypoint (function() {
   $four.addClass('js-appear');
 }, {offset: '50%' });
 
