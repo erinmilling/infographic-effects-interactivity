@@ -1,0 +1,262 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  background-color: #bae4f9;
+  font-family: sans-serif;
+
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+svg {
+  display: block;
+  width: 100%;
+}
+
+.title {
+  padding: 1em;
+}
+
+.hello {
+  animation: pulse1 1s linear;
+}
+
+@keyframes pulse1 {
+
+  0% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(0.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+h2 {
+  color: #257d79;
+  padding-top: 3em;
+}
+
+.growth-one svg {
+  width: 1.5em;
+  margin: 0 auto;
+  display: block;
+}
+
+.growth-one p {
+  text-align: center;
+}
+
+.growth-two svg {
+  width: 2em;
+  margin: 0 auto;
+  display: block;
+}
+
+.growth-two p {
+  text-align: center;
+}
+
+.growth-three svg {
+  width: 3em;
+  margin: 0 auto;
+  display: block;
+}
+
+.growth-three p {
+  text-align: center;
+}
+
+.growth-four svg {
+  width: 3em;
+  margin: 0 auto;
+  display: block;
+}
+
+.growth-four p {
+  text-align: center;
+}
+
+.growth-five svg {
+  width: 4em;
+  margin: 0 auto;
+  display: block;
+}
+
+.growth-five p {
+  text-align: center;
+}
+
+.fruit svg {
+  width: 4em;
+  margin: 0 auto;
+  display: block;
+}
+
+.fruit p {
+  text-align: center;
+}
+
+.green {
+  color: #a8bf50;
+}
+
+.chart svg {
+  margin: 0 auto;
+}
+
+.seed, .seedling, .sprout, .plant, .bigplant {
+  opacity: 0;
+  transition: all 200ms ease-in;
+}
+
+.js-seed-animate, .js-seedling-animate, .js-sprout-animate, .js-plant-animate, .js-bigplant-animate {
+  opacity: 1;
+  animation: seed-jiggle 250ms linear;
+}
+
+@keyframes seed-jiggle {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(15deg);
+  }
+
+  66% {
+    transform: rotate(-15deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.one, .two, .three, .four {
+  opacity: 0;
+}
+
+.js-bounce {
+  animation: bounce 1s linear;
+  opacity: 1;
+}
+
+@keyframes bounce {
+
+  0% {
+    transform: translate(0, -10px);
+  }
+
+  25% {
+    transform: translate(0, 10px);
+  }
+
+  50% {
+    transform: translate(0, -10px);
+  }
+
+  75% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, -10px);
+  }
+}
+
+.js-slide {
+  animation: slide 1s linear;
+  opacity: 1;
+}
+
+@keyframes slide {
+
+  0% { transform: translate(0, 0); }
+
+  33% { transform: translate(-20px, 0); }
+
+  66% { transform: translate(20px, 0); }
+
+  100% { transform: translate(0, 0); }
+
+}
+
+.js-rotate {
+  animation: rotate 1s linear;
+  opacity: 1;
+}
+
+@keyframes rotate {
+
+  0% {
+    transform: rotate(0);
+  }
+
+  33% {
+    transform: rotate(90deg);
+  }
+
+  66% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.js-appear {
+  transition: ease-in 1s;
+  opacity: 1;
+}
+
+.graph {
+  opacity: 0;
+}
+
+.graph:hover {
+  transition: all ease-in 1s;
+  opacity: 1;
+}
+
+.star {
+  left: 0;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  width: 30px;
+  transform-origin: center center;
+  background: url("../images/star.svg") no-repeat center center / contain transparent;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+
+  0% {
+    width: 20px;
+    height: 20px;
+  }
+
+  100% {
+    width: 60px;
+    height: 60px;
+  }
+}
